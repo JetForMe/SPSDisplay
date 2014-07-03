@@ -82,7 +82,7 @@ SPSDisplayApp::init()
 	
 	//SDLFont* labelFont = SDLFont::fontForName("HelveticaNeue-Regular", 12);
 	SDLFont* labelFont = SDLFont::fontForName("HelveticaNeueLTStd-Roman.otf", 12);
-	SDLFont* labelFontBold = SDLFont::fontForName("HelveticaNeue-Bold.ttf", 12);
+	//SDLFont* labelFontBold = SDLFont::fontForName("HelveticaNeue-Bold.ttf", 12);
 	SDLFont* mainValueFont = SDLFont::fontForName("HelveticaNeue-Bold.ttf", 48);
 	
 	//	Build views…

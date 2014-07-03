@@ -24,15 +24,15 @@
 SDLView::SDLView(const SDL_Rect& inFrame)
 	:
 	mFrame(inFrame),
-	mBackgroundColor({ 0 }),
-	mNeedsDisplay(false)
+	mNeedsDisplay(false),
+	mBackgroundColor({ 0 })
 {
 }
 
 SDLView::SDLView(int16_t inX, int16_t inY, uint16_t inWidth, uint16_t inHeight)
 	:
-	mBackgroundColor({ 0 }),
-	mNeedsDisplay(false)
+	mNeedsDisplay(false),
+	mBackgroundColor({ 0 })
 {
 	SDL_Rect f = { inX, inY, inWidth, inHeight };
 	mFrame = f;

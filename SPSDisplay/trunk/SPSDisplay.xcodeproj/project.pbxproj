@@ -388,6 +388,10 @@
 					/usr/local/Cellar/libmodbus/3.1.1/lib,
 				);
 				OTHER_CFLAGS = "-DSDLFramework";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wreorder",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,6 +419,10 @@
 					/usr/local/Cellar/libmodbus/3.1.1/lib,
 				);
 				OTHER_CFLAGS = "-DSDLFramework";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wreorder",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
