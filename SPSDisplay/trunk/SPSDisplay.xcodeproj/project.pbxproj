@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C61DC7F31955AC12000DDCBF /* SDLDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C61DC7F11955AC12000DDCBF /* SDLDisplay.cpp */; };
+		C61DC7F51957593F000DDCBF /* libmodbus.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C61DC7F41957593F000DDCBF /* libmodbus.5.dylib */; };
+		C61DC7F81957C0B3000DDCBF /* ChargeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C61DC7F61957C0B3000DDCBF /* ChargeController.cpp */; };
+		C61DC7FB1957C1A1000DDCBF /* TristarMPPT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C61DC7F91957C1A1000DDCBF /* TristarMPPT.cpp */; };
+		C6974A701962AFCE00BB4C1A /* spa.c in Sources */ = {isa = PBXBuildFile; fileRef = C6974A6E1962AFCE00BB4C1A /* spa.c */; };
+		C6E353261955212900887DE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E353041954E07400887DE3 /* Cocoa.framework */; };
+		C6E353301955212900887DE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6E3532E1955212900887DE3 /* InfoPlist.strings */; };
+		C6E353361955212900887DE3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C6E353341955212900887DE3 /* Credits.rtf */; };
+		C6E3533C1955212900887DE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E3533A1955212900887DE3 /* MainMenu.xib */; };
+		C6E3533E1955212900887DE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E3533D1955212900887DE3 /* Images.xcassets */; };
+		C6E35357195521D100887DE3 /* SPSDisplayApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E3531819551C1300887DE3 /* SPSDisplayApp.cpp */; };
+		C6E35358195521D100887DE3 /* SDLSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E3531C19551D5500887DE3 /* SDLSurface.cpp */; };
+		C6E35359195521D100887DE3 /* OSXDisplayApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E3531319551BE200887DE3 /* OSXDisplayApp.cpp */; };
+		C6E3535A195521D100887DE3 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E3530A1954E18D00887DE3 /* SDLMain.m */; };
+		C6E3535B195521F500887DE3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E353281955212900887DE3 /* AppKit.framework */; };
+		C6E3535C195521F900887DE3 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E3530C1954E2D600887DE3 /* SDL.framework */; };
+		C6E3535D195521FB00887DE3 /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E353101954F61E00887DE3 /* SDL_ttf.framework */; };
+		C6E3535E195521FD00887DE3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E353021954DFA300887DE3 /* CoreFoundation.framework */; };
+		C6E35365195589C900887DE3 /* SDLLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E35363195589C900887DE3 /* SDLLabel.cpp */; };
+		C6E35366195589CC00887DE3 /* SDLFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E353601955876B00887DE3 /* SDLFont.cpp */; };
+		C6E3536919558B9A00887DE3 /* SDLView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E3536719558B9A00887DE3 /* SDLView.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C61DC7F11955AC12000DDCBF /* SDLDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLDisplay.cpp; sourceTree = "<group>"; };
+		C61DC7F21955AC12000DDCBF /* SDLDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLDisplay.h; sourceTree = "<group>"; };
+		C61DC7F41957593F000DDCBF /* libmodbus.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmodbus.5.dylib; path = ../../../../../../../usr/local/Cellar/libmodbus/3.1.1/lib/libmodbus.5.dylib; sourceTree = "<group>"; };
+		C61DC7F61957C0B3000DDCBF /* ChargeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChargeController.cpp; sourceTree = "<group>"; };
+		C61DC7F71957C0B3000DDCBF /* ChargeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChargeController.h; sourceTree = "<group>"; };
+		C61DC7F91957C1A1000DDCBF /* TristarMPPT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TristarMPPT.cpp; sourceTree = "<group>"; };
+		C61DC7FA1957C1A1000DDCBF /* TristarMPPT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TristarMPPT.h; sourceTree = "<group>"; };
+		C6974A6E1962AFCE00BB4C1A /* spa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spa.c; sourceTree = "<group>"; };
+		C6974A6F1962AFCE00BB4C1A /* spa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spa.h; sourceTree = "<group>"; };
+		C6E352EA1954DC4600887DE3 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		C6E353021954DFA300887DE3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C6E353041954E07400887DE3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C6E353091954E18D00887DE3 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		C6E3530A1954E18D00887DE3 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		C6E3530C1954E2D600887DE3 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		C6E353101954F61E00887DE3 /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
+		C6E3531319551BE200887DE3 /* OSXDisplayApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSXDisplayApp.cpp; sourceTree = "<group>"; };
+		C6E3531419551BE200887DE3 /* OSXDisplayApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXDisplayApp.h; sourceTree = "<group>"; };
+		C6E3531819551C1300887DE3 /* SPSDisplayApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPSDisplayApp.cpp; sourceTree = "<group>"; };
+		C6E3531919551C1300887DE3 /* SPSDisplayApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSDisplayApp.h; sourceTree = "<group>"; };
+		C6E3531C19551D5500887DE3 /* SDLSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLSurface.cpp; sourceTree = "<group>"; };
+		C6E3531D19551D5500887DE3 /* SDLSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLSurface.h; sourceTree = "<group>"; };
+		C6E353251955212900887DE3 /* CocoaDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E353281955212900887DE3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C6E3532A1955212900887DE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6E3532D1955212900887DE3 /* CocoaDisplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaDisplay-Info.plist"; sourceTree = "<group>"; };
+		C6E3532F1955212900887DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6E353331955212900887DE3 /* CocoaDisplay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaDisplay-Prefix.pch"; sourceTree = "<group>"; };
+		C6E353351955212900887DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C6E3533B1955212900887DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C6E3533D1955212900887DE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6E353601955876B00887DE3 /* SDLFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLFont.cpp; sourceTree = "<group>"; };
+		C6E353611955876B00887DE3 /* SDLFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLFont.h; sourceTree = "<group>"; };
+		C6E35363195589C900887DE3 /* SDLLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLLabel.cpp; sourceTree = "<group>"; };
+		C6E35364195589C900887DE3 /* SDLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLabel.h; sourceTree = "<group>"; };
+		C6E3536719558B9A00887DE3 /* SDLView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLView.cpp; sourceTree = "<group>"; };
+		C6E3536819558B9A00887DE3 /* SDLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLView.h; sourceTree = "<group>"; };
+		C6E3536B19559F8900887DE3 /* BBBDisplayApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BBBDisplayApp.cpp; sourceTree = "<group>"; };
+		C6E3536C19559F8900887DE3 /* BBBDisplayApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBBDisplayApp.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6E353221955212900887DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61DC7F51957593F000DDCBF /* libmodbus.5.dylib in Frameworks */,
+				C6E353261955212900887DE3 /* Cocoa.framework in Frameworks */,
+				C6E3535E195521FD00887DE3 /* CoreFoundation.framework in Frameworks */,
+				C6E3535B195521F500887DE3 /* AppKit.framework in Frameworks */,
+				C6E3535C195521F900887DE3 /* SDL.framework in Frameworks */,
+				C6E3535D195521FB00887DE3 /* SDL_ttf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6E352DC1954DAAF00887DE3 = {
+			isa = PBXGroup;
+			children = (
+				C6E352EA1954DC4600887DE3 /* Makefile */,
+				C6E3531919551C1300887DE3 /* SPSDisplayApp.h */,
+				C6E3531819551C1300887DE3 /* SPSDisplayApp.cpp */,
+				C6E3536C19559F8900887DE3 /* BBBDisplayApp.h */,
+				C6E3536B19559F8900887DE3 /* BBBDisplayApp.cpp */,
+				C61DC7F71957C0B3000DDCBF /* ChargeController.h */,
+				C61DC7F61957C0B3000DDCBF /* ChargeController.cpp */,
+				C61DC7FA1957C1A1000DDCBF /* TristarMPPT.h */,
+				C61DC7F91957C1A1000DDCBF /* TristarMPPT.cpp */,
+				C6974A6F1962AFCE00BB4C1A /* spa.h */,
+				C6974A6E1962AFCE00BB4C1A /* spa.c */,
+				C6E3531B19551D5500887DE3 /* SDL */,
+				C6E353081954E18D00887DE3 /* OSX */,
+				C6E3532B1955212900887DE3 /* CocoaDisplay */,
+				C6E3531219551B9A00887DE3 /* Frameworks */,
+				C6E352F01954DC8100887DE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6E352F01954DC8100887DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6E353251955212900887DE3 /* CocoaDisplay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6E353081954E18D00887DE3 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3531419551BE200887DE3 /* OSXDisplayApp.h */,
+				C6E3531319551BE200887DE3 /* OSXDisplayApp.cpp */,
+				C6E353091954E18D00887DE3 /* SDLMain.h */,
+				C6E3530A1954E18D00887DE3 /* SDLMain.m */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
+		C6E3531219551B9A00887DE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C61DC7F41957593F000DDCBF /* libmodbus.5.dylib */,
+				C6E353281955212900887DE3 /* AppKit.framework */,
+				C6E3532A1955212900887DE3 /* Foundation.framework */,
+				C6E353041954E07400887DE3 /* Cocoa.framework */,
+				C6E353021954DFA300887DE3 /* CoreFoundation.framework */,
+				C6E3530C1954E2D600887DE3 /* SDL.framework */,
+				C6E353101954F61E00887DE3 /* SDL_ttf.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6E3531B19551D5500887DE3 /* SDL */ = {
+			isa = PBXGroup;
+			children = (
+				C61DC7F21955AC12000DDCBF /* SDLDisplay.h */,
+				C61DC7F11955AC12000DDCBF /* SDLDisplay.cpp */,
+				C6E353611955876B00887DE3 /* SDLFont.h */,
+				C6E353601955876B00887DE3 /* SDLFont.cpp */,
+				C6E35364195589C900887DE3 /* SDLLabel.h */,
+				C6E35363195589C900887DE3 /* SDLLabel.cpp */,
+				C6E3531D19551D5500887DE3 /* SDLSurface.h */,
+				C6E3531C19551D5500887DE3 /* SDLSurface.cpp */,
+				C6E3536819558B9A00887DE3 /* SDLView.h */,
+				C6E3536719558B9A00887DE3 /* SDLView.cpp */,
+			);
+			path = SDL;
+			sourceTree = "<group>";
+		};
+		C6E3532B1955212900887DE3 /* CocoaDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3533A1955212900887DE3 /* MainMenu.xib */,
+				C6E3533D1955212900887DE3 /* Images.xcassets */,
+				C6E3532C1955212900887DE3 /* Supporting Files */,
+			);
+			path = CocoaDisplay;
+			sourceTree = "<group>";
+		};
+		C6E3532C1955212900887DE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3532D1955212900887DE3 /* CocoaDisplay-Info.plist */,
+				C6E3532E1955212900887DE3 /* InfoPlist.strings */,
+				C6E353331955212900887DE3 /* CocoaDisplay-Prefix.pch */,
+				C6E353341955212900887DE3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6E353241955212900887DE3 /* CocoaDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E353511955212900887DE3 /* Build configuration list for PBXNativeTarget "CocoaDisplay" */;
+			buildPhases = (
+				C6E353211955212900887DE3 /* Sources */,
+				C6E353221955212900887DE3 /* Frameworks */,
+				C6E353231955212900887DE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaDisplay;
+			productName = CocoaDisplay;
+			productReference = C6E353251955212900887DE3 /* CocoaDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6E352DD1954DAAF00887DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Latency: Zero";
+			};
+			buildConfigurationList = C6E352E01954DAAF00887DE3 /* Build configuration list for PBXProject "SPSDisplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6E352DC1954DAAF00887DE3;
+			productRefGroup = C6E352F01954DC8100887DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6E353241955212900887DE3 /* CocoaDisplay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6E353231955212900887DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E353301955212900887DE3 /* InfoPlist.strings in Resources */,
+				C6E3533E1955212900887DE3 /* Images.xcassets in Resources */,
+				C6E353361955212900887DE3 /* Credits.rtf in Resources */,
+				C6E3533C1955212900887DE3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6E353211955212900887DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6974A701962AFCE00BB4C1A /* spa.c in Sources */,
+				C61DC7F31955AC12000DDCBF /* SDLDisplay.cpp in Sources */,
+				C6E35358195521D100887DE3 /* SDLSurface.cpp in Sources */,
+				C6E3536919558B9A00887DE3 /* SDLView.cpp in Sources */,
+				C6E35366195589CC00887DE3 /* SDLFont.cpp in Sources */,
+				C6E35365195589C900887DE3 /* SDLLabel.cpp in Sources */,
+				C6E35357195521D100887DE3 /* SPSDisplayApp.cpp in Sources */,
+				C6E35359195521D100887DE3 /* OSXDisplayApp.cpp in Sources */,
+				C61DC7F81957C0B3000DDCBF /* ChargeController.cpp in Sources */,
+				C61DC7FB1957C1A1000DDCBF /* TristarMPPT.cpp in Sources */,
+				C6E3535A195521D100887DE3 /* SDLMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6E3532E1955212900887DE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6E3532F1955212900887DE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6E353341955212900887DE3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6E353351955212900887DE3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C6E3533A1955212900887DE3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6E3533B1955212900887DE3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6E352E21954DAAF00887DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C6E352E31954DAAF00887DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C6E353521955212900887DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaDisplay/CocoaDisplay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = "CocoaDisplay/CocoaDisplay-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libmodbus/3.1.1/lib,
+				);
+				OTHER_CFLAGS = "-DSDLFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6E353531955212900887DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaDisplay/CocoaDisplay-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = "CocoaDisplay/CocoaDisplay-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libmodbus/3.1.1/lib,
+				);
+				OTHER_CFLAGS = "-DSDLFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6E352E01954DAAF00887DE3 /* Build configuration list for PBXProject "SPSDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E352E21954DAAF00887DE3 /* Debug */,
+				C6E352E31954DAAF00887DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E353511955212900887DE3 /* Build configuration list for PBXNativeTarget "CocoaDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E353521955212900887DE3 /* Debug */,
+				C6E353531955212900887DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6E352DD1954DAAF00887DE3 /* Project object */;
+}
