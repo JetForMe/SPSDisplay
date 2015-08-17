@@ -28,6 +28,8 @@
 //	Project Includes
 //
 
+#include "SPSUtil.h"
+
 #include "SDLFont.h"
 #include "SDLSurface.h"
 
@@ -55,6 +57,8 @@ SDLLabel::init()
 	setTextColor(0, 0, 0, 255);
 	//setBackgroundColor(255, 255, 255);
 	mJustification = kJustificationLeft;
+	mDecimalOffset = 0;
+	mOffsetWidth = 0;
 	mSurface = NULL;
 }
 
@@ -90,6 +94,13 @@ SDLLabel::setJustification(SDLJustification inJust)
 }
 
 void
+SDLLabel::setDecimalOffset(int16_t inOffset)
+{
+	mDecimalOffset = inOffset;
+	setNeedsDisplay();
+}
+
+void
 SDLLabel::updateSurface()
 {
 	if (needsDisplay())
@@ -98,6 +109,38 @@ SDLLabel::updateSurface()
 		//SDL_Surface* sdlS = ::TTF_RenderUTF8_Shaded(mFont->font(), mText.c_str(), mTextColor, backgroundColor());
 		SDL_Surface* sdlS = ::TTF_RenderUTF8_Blended(mFont->font(), mText.c_str(), mTextColor);
 		mSurface = new SDLSurface(sdlS);
+		
+		//	Compute the offset width. If using decimal justification,
+		//	we need to split the string on the decimal point. If not,
+		//	just use the whole string…
+		
+		std::string text;
+		if (mJustification == kJustificationDecimal)
+		{
+			size_t pos = mText.rfind(".");
+			if (pos == std::string::npos)
+			{
+				text = mText;
+			}
+			else
+			{
+				//	We found the last decimal point, split the string here…
+				
+				text = mText.substr(pos);
+			}
+		}
+		else
+		{
+			text = mText;
+		}
+		
+		int16_t ignoreHeight;
+		int result = mFont->measureText(text, mOffsetWidth, ignoreHeight);
+		if (result != 0)
+		{
+			LZLogDebug("meaureText returned %d\n", result);
+		}
+		
 		clearNeedsDisplay();
 	}
 }
@@ -110,21 +153,31 @@ SDLLabel::draw(SDLSurface* inSurface) const
 	//	Determine where it should be placed based on the justification…
 	
 	SDL_Rect f = frame();
+	f.x = 0;
 	f.y = 0.0;
-#if 1
 	if (mJustification == kJustificationCenter)
 	{
 		//	Center over the center of our frame…
 		
-		f.x = (frame().w - mSurface->width()) / 2;
+		f.x = (frame().w - mOffsetWidth) / 2;
 	}
 	else if (mJustification == kJustificationRight)
 	{
 		//	Subtract the width from our rect right edge…
 		
-		f.x = frame().w - mSurface->width();
+		f.x = frame().w - mOffsetWidth;
 	}
-#endif
+	else if (mJustification == kJustificationDecimal)
+	{
+		if (mDecimalOffset >= 0)
+		{
+			f.x = frame().w - mDecimalOffset - mOffsetWidth;
+		}
+		else
+		{
+			f.x = -mDecimalOffset - mOffsetWidth;
+		}
+	}
 
 	inSurface->blit(mSurface, f);
 }

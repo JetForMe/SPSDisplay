@@ -4,9 +4,9 @@ SDLINC	=	/usr/local/include
 
 CC		= gcc
 CPP		= g++
-CFLAGS	= -g -Wall -I. -ISDL -Wno-unknown-pragmas -D_REENTRANT
+CFLAGS	= -g -Wall -I. -ISDL -I../libxively/src/libxively -Wno-unknown-pragmas -D_REENTRANT
 CPPFLAGS  = $(CFLAGS) -std=gnu++0x
-LDFLAGS = -L/usr/local/lib -Wl,-rpath,/usr/local/lib -lSDL -lSDL_ttf -lmodbus -lpthread
+LDFLAGS = -L/usr/local/lib -L../libxively/obj -Wl,-rpath,/usr/local/lib -lSDL -lSDL_ttf -lmodbus -lxively -lpthread
 
 
 CORE   = \
@@ -22,8 +22,10 @@ CPPSRC = \
 	SDL/SDLView.cpp \
 	BBBDisplayApp.cpp \
 	ChargeController.cpp \
+	PentaMetric.cpp \
 	SPSDisplayApp.cpp \
 	TristarMPPT.cpp \
+	Timer.cpp \
 
 CORE_OBJ   = $(CORE:.c=.o)
 COMMON_OBJ = $(COMMON:.c=.o)

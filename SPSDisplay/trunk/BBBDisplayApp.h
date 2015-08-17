@@ -22,6 +22,8 @@ class
 BBBDisplayApp : public SPSDisplayApp
 {
 public:
+	BBBDisplayApp();
+	
 	virtual	SDLDisplay*		createDisplay();
 
 protected:

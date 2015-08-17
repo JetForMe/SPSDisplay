@@ -48,6 +48,7 @@ public:
 	virtual	float			energy()			const					{ return mEnergy; }
 
 protected:
+			void			connect();
 			void			resetValues();
 			
 private:

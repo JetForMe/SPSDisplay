@@ -12,6 +12,8 @@
 	<dict>
 		<key>A5F6185C-C771-4FF4-9997-777CDD208797</key>
 		<string>https://latencyzero.sourcerepo.com/latencyzero/SolarPowerStation</string>
+		<key>BDB79FCD-8668-4A6D-9886-E77A62D77703</key>
+		<string>https://github.com/xively/libxively</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SPSDisplay/trunk/SPSDisplay.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>A5F6185C-C771-4FF4-9997-777CDD208797</key>
 		<string>../../../..</string>
+		<key>BDB79FCD-8668-4A6D-9886-E77A62D77703</key>
+		<string>../../lib/libxively</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
@@ -33,6 +37,14 @@
 	<string>A5F6185C-C771-4FF4-9997-777CDD208797</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BDB79FCD-8668-4A6D-9886-E77A62D77703</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libxively</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>

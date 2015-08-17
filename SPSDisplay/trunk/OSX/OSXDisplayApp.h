@@ -22,6 +22,8 @@ class
 OSXDisplayApp : public SPSDisplayApp
 {
 public:
+	OSXDisplayApp();
+	
 	virtual	SDLDisplay*		createDisplay();
 
 protected:

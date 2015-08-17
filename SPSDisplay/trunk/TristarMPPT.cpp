@@ -23,6 +23,8 @@
 
 #include <modbus/modbus.h>
 
+#include "SPSUtil.h"
+
 
 
 
@@ -34,13 +36,25 @@ TristarMPPT::TristarMPPT(const std::string& inPath)
 	
 	//	Open the connection to the charge controller…
 	
-	std::fprintf(stderr, "Opening connection to MPPT\n");
+	connect();
+}
+
+void
+TristarMPPT::connect()
+{
+	if (mConnected)
+	{
+		return;
+	}
+	
+	LZLogDebug("Opening connection to MPPT\n");
 	std::string path = "/dev/cu.USA19H142P1.1";
 	//mModbus = ::modbus_new_rtu(path.c_str(), 9600, 'N', 8, 1);
-	mModbus = ::modbus_new_tcp("192.168.15.16", 502);
+	//mModbus = ::modbus_new_tcp("100.100.5.237", 502);
+	mModbus = ::modbus_new_tcp("100.100.5.146", 502);
 	if (mModbus == NULL)
 	{
-		std::fprintf(stderr, "Unable to open modbus connection to %s: %s\n", path.c_str(), strerror(errno));
+		LZLogDebug("Unable to open modbus connection to %s: %s\n", path.c_str(), strerror(errno));
 		return;
 	}
 	::modbus_set_debug(mModbus, false);
@@ -48,7 +62,7 @@ TristarMPPT::TristarMPPT(const std::string& inPath)
 	int result = ::modbus_connect(mModbus);
 	if (result < 0)
 	{
-		std::fprintf(stderr, "Unable to connect to MPPT: %s\n", strerror(errno));
+		LZLogDebug("Unable to connect to MPPT: %s\n", strerror(errno));
 		return;
 	}
 	
@@ -83,7 +97,9 @@ TristarMPPT::update()
 	int result = ::modbus_read_registers(mModbus, 0, 63, reg);
 	if (result < 63)
 	{
-		std::fprintf(stderr, "Unable to read registers: %s\n", strerror(errno));
+		LZLogDebug("Unable to read registers: %s\n", strerror(errno));
+		mConnected = false;
+		connect();
 		return;
 	}
 	
@@ -104,21 +120,21 @@ TristarMPPT::update()
 	mEnergy = reg[56];
 	
 #if 0
-	std::fprintf(stderr, "Read %d registers\n", result);
+	LZLogDebug("Read %d registers\n", result);
 	for (int i = 0; i < result; ++i)
 	{
-		std::fprintf(stderr, "Reg %02d: %5u\n", i, reg[i]);
+		LZLogDebug("Reg %02d: %5u\n", i, reg[i]);
 	}
 #endif
 
 #if 1
-	std::fprintf(stderr, "Voltage scaling: %f\n", voltageScaling);
-	std::fprintf(stderr, "Current scaling: %f\n", currentScaling);
-	std::fprintf(stderr, "Battery voltage:  %6.2f  V\n", mBatteryVoltage);
-	std::fprintf(stderr, "Battery current:  %6.2f  A\n", mBatteryCurrent);
-	std::fprintf(stderr, "Array voltage:    %6.2f  V\n", mArrayVoltage);
-	std::fprintf(stderr, "Array current:     %6.3f A\n", mArrayCurrent);
-	std::fprintf(stderr, "Output power:    %7.2f  W\n", mOutputPower);
-	std::fprintf(stderr, "Input power:     %7.2f  W\n", mInputPower);
+	LZLogDebug("Voltage scaling: %f\n", voltageScaling);
+	LZLogDebug("Current scaling: %f\n", currentScaling);
+	LZLogDebug("Battery voltage:  %6.2f  V\n", mBatteryVoltage);
+	LZLogDebug("Battery current:  %6.2f  A\n", mBatteryCurrent);
+	LZLogDebug("Array voltage:    %6.2f  V\n", mArrayVoltage);
+	LZLogDebug("Array current:     %6.3f A\n", mArrayCurrent);
+	LZLogDebug("Output power:    %7.2f  W\n", mOutputPower);
+	LZLogDebug("Input power:     %7.2f  W\n", mInputPower);
 #endif
 }

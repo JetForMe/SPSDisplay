@@ -22,12 +22,20 @@
 //	Project Includes
 //
 
-#include "SDLDisplay.h"
+#include "SPSUtil.h"
 
+#include "SDLDisplay.h"
+#include "SDLFont.h"
+
+#include "PentaMetric.h"
 #include "TristarMPPT.h"
 
 
 
+BBBDisplayApp::BBBDisplayApp()
+{
+	SDLFont::addFontLocation("../fonts/");
+}
 
 SDLDisplay*
 BBBDisplayApp::createDisplay()
@@ -41,8 +49,21 @@ BBBDisplayApp::createDisplay()
 bool
 BBBDisplayApp::initChargeController()
 {
+	LZLogDebug("Opening TristarMPPT connection\n");
 	mChargeController = new TristarMPPT("/dev/tty1");	//	TODO: what will this be?
-	return mChargeController != NULL;
+	if (mChargeController == NULL)
+	{
+		return false;
+	}
+	
+	LZLogDebug("Opening PentaMetric connection\n");
+	mPentaMetric = new PentaMetric("/dev/ttyACM0");
+	if (mPentaMetric == NULL)
+	{
+		return false;
+	}
+	
+	return true;
 }
 
 

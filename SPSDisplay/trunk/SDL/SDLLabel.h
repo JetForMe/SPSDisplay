@@ -28,6 +28,7 @@ SDLJustification
 	kJustificationLeft			=	0,
 	kJustificationCenter		=	1,
 	kJustificationRight			=	2,
+	kJustificationDecimal		=	3,
 };
 
 class
@@ -47,6 +48,17 @@ public:
 	void				setTextColor(uint8_t inRed, uint8_t inGreen, uint8_t inBlue, uint8_t inAlpha = 255);
 	void				setJustification(SDLJustification inJust);
 	
+						/**
+							The decimal offset is the number of pixels from the right
+							or left edge of the label’s frame to offset the decimal point.
+							Positive values offset from the right edge, negative values
+							offset from the left edge. If there is no decimal point
+							found in the label’s text, one is implicitly assumed to exist
+							after the last character in the text.
+						*/
+				
+	void				setDecimalOffset(int16_t inOffset);
+	
 	virtual	void		draw(SDLSurface* inSurface) const;
 
 	const SDLSurface*	surface() const;
@@ -60,6 +72,8 @@ private:
 	const SDLFont*		mFont;
 	SDL_Color			mTextColor;
 	SDLJustification	mJustification;
+	int16_t				mDecimalOffset;
+	int16_t				mOffsetWidth;
 	SDLSurface*			mSurface;
 };
 

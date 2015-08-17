@@ -11,6 +11,9 @@
 		C61DC7F51957593F000DDCBF /* libmodbus.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C61DC7F41957593F000DDCBF /* libmodbus.5.dylib */; };
 		C61DC7F81957C0B3000DDCBF /* ChargeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C61DC7F61957C0B3000DDCBF /* ChargeController.cpp */; };
 		C61DC7FB1957C1A1000DDCBF /* TristarMPPT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C61DC7F91957C1A1000DDCBF /* TristarMPPT.cpp */; };
+		C6280ECF199CAABE00615877 /* PentaMetric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6280ECD199CAABE00615877 /* PentaMetric.cpp */; };
+		C65B958619A1297300DD91F4 /* SPSUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65B958419A1297300DD91F4 /* SPSUtil.cpp */; };
+		C65B958919ABDF4500DD91F4 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65B958719ABDF4500DD91F4 /* Timer.cpp */; };
 		C6974A701962AFCE00BB4C1A /* spa.c in Sources */ = {isa = PBXBuildFile; fileRef = C6974A6E1962AFCE00BB4C1A /* spa.c */; };
 		C6E353261955212900887DE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E353041954E07400887DE3 /* Cocoa.framework */; };
 		C6E353301955212900887DE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6E3532E1955212900887DE3 /* InfoPlist.strings */; };
@@ -28,6 +31,7 @@
 		C6E35365195589C900887DE3 /* SDLLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E35363195589C900887DE3 /* SDLLabel.cpp */; };
 		C6E35366195589CC00887DE3 /* SDLFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E353601955876B00887DE3 /* SDLFont.cpp */; };
 		C6E3536919558B9A00887DE3 /* SDLView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6E3536719558B9A00887DE3 /* SDLView.cpp */; };
+		C6E405CC196A33E2003F8190 /* libxively.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E405CB196A33E2003F8190 /* libxively.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,14 @@
 		C61DC7F71957C0B3000DDCBF /* ChargeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChargeController.h; sourceTree = "<group>"; };
 		C61DC7F91957C1A1000DDCBF /* TristarMPPT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TristarMPPT.cpp; sourceTree = "<group>"; };
 		C61DC7FA1957C1A1000DDCBF /* TristarMPPT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TristarMPPT.h; sourceTree = "<group>"; };
+		C6280ECD199CAABE00615877 /* PentaMetric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PentaMetric.cpp; sourceTree = "<group>"; };
+		C6280ECE199CAABE00615877 /* PentaMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PentaMetric.h; sourceTree = "<group>"; };
+		C65427571965518600BDD95C /* SDL_ttf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SDL_ttf.c; sourceTree = "<group>"; };
+		C65427591965523100BDD95C /* SDL_ttf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_ttf.h; sourceTree = "<group>"; };
+		C65B958419A1297300DD91F4 /* SPSUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPSUtil.cpp; sourceTree = "<group>"; };
+		C65B958519A1297300DD91F4 /* SPSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSUtil.h; sourceTree = "<group>"; };
+		C65B958719ABDF4500DD91F4 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		C65B958819ABDF4500DD91F4 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		C6974A6E1962AFCE00BB4C1A /* spa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spa.c; sourceTree = "<group>"; };
 		C6974A6F1962AFCE00BB4C1A /* spa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spa.h; sourceTree = "<group>"; };
 		C6E352EA1954DC4600887DE3 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -70,6 +82,7 @@
 		C6E3536819558B9A00887DE3 /* SDLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLView.h; sourceTree = "<group>"; };
 		C6E3536B19559F8900887DE3 /* BBBDisplayApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BBBDisplayApp.cpp; sourceTree = "<group>"; };
 		C6E3536C19559F8900887DE3 /* BBBDisplayApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBBDisplayApp.h; sourceTree = "<group>"; };
+		C6E405CB196A33E2003F8190 /* libxively.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxively.a; path = lib/libxively/obj/libxively.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E405CC196A33E2003F8190 /* libxively.a in Frameworks */,
 				C61DC7F51957593F000DDCBF /* libmodbus.5.dylib in Frameworks */,
 				C6E353261955212900887DE3 /* Cocoa.framework in Frameworks */,
 				C6E3535E195521FD00887DE3 /* CoreFoundation.framework in Frameworks */,
@@ -97,12 +111,20 @@
 				C6E3531819551C1300887DE3 /* SPSDisplayApp.cpp */,
 				C6E3536C19559F8900887DE3 /* BBBDisplayApp.h */,
 				C6E3536B19559F8900887DE3 /* BBBDisplayApp.cpp */,
+				C65B958819ABDF4500DD91F4 /* Timer.h */,
+				C65B958719ABDF4500DD91F4 /* Timer.cpp */,
 				C61DC7F71957C0B3000DDCBF /* ChargeController.h */,
 				C61DC7F61957C0B3000DDCBF /* ChargeController.cpp */,
 				C61DC7FA1957C1A1000DDCBF /* TristarMPPT.h */,
 				C61DC7F91957C1A1000DDCBF /* TristarMPPT.cpp */,
+				C6280ECE199CAABE00615877 /* PentaMetric.h */,
+				C6280ECD199CAABE00615877 /* PentaMetric.cpp */,
 				C6974A6F1962AFCE00BB4C1A /* spa.h */,
 				C6974A6E1962AFCE00BB4C1A /* spa.c */,
+				C65427591965523100BDD95C /* SDL_ttf.h */,
+				C65427571965518600BDD95C /* SDL_ttf.c */,
+				C65B958419A1297300DD91F4 /* SPSUtil.cpp */,
+				C65B958519A1297300DD91F4 /* SPSUtil.h */,
 				C6E3531B19551D5500887DE3 /* SDL */,
 				C6E353081954E18D00887DE3 /* OSX */,
 				C6E3532B1955212900887DE3 /* CocoaDisplay */,
@@ -133,6 +155,7 @@
 		C6E3531219551B9A00887DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6E405CB196A33E2003F8190 /* libxively.a */,
 				C61DC7F41957593F000DDCBF /* libmodbus.5.dylib */,
 				C6E353281955212900887DE3 /* AppKit.framework */,
 				C6E3532A1955212900887DE3 /* Foundation.framework */,
@@ -252,9 +275,12 @@
 				C61DC7F31955AC12000DDCBF /* SDLDisplay.cpp in Sources */,
 				C6E35358195521D100887DE3 /* SDLSurface.cpp in Sources */,
 				C6E3536919558B9A00887DE3 /* SDLView.cpp in Sources */,
+				C6280ECF199CAABE00615877 /* PentaMetric.cpp in Sources */,
+				C65B958919ABDF4500DD91F4 /* Timer.cpp in Sources */,
 				C6E35366195589CC00887DE3 /* SDLFont.cpp in Sources */,
 				C6E35365195589C900887DE3 /* SDLLabel.cpp in Sources */,
 				C6E35357195521D100887DE3 /* SPSDisplayApp.cpp in Sources */,
+				C65B958619A1297300DD91F4 /* SPSUtil.cpp in Sources */,
 				C6E35359195521D100887DE3 /* OSXDisplayApp.cpp in Sources */,
 				C61DC7F81957C0B3000DDCBF /* ChargeController.cpp in Sources */,
 				C61DC7FB1957C1A1000DDCBF /* TristarMPPT.cpp in Sources */,
@@ -374,18 +400,22 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaDisplay/CocoaDisplay-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"XI_NOB_ENABLED=0",
 					"$(inherited)",
 				);
+				GCC_WARN_SIGN_COMPARE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/include,
+					/usr/local/Cellar/freetype/2.5.3_1/include/freetype2,
+					"$(SRCROOT)/lib/libxively/src/libxively",
 				);
 				INFOPLIST_FILE = "CocoaDisplay/CocoaDisplay-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/libmodbus/3.1.1/lib,
+					"$(PROJECT_DIR)/lib/libxively/obj",
 				);
 				OTHER_CFLAGS = "-DSDLFramework";
 				OTHER_CPLUSPLUSFLAGS = (
@@ -408,15 +438,20 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaDisplay/CocoaDisplay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "XI_NOB_ENABLED=0";
+				GCC_WARN_SIGN_COMPARE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/include,
+					/usr/local/Cellar/freetype/2.5.3_1/include/freetype2,
+					"$(SRCROOT)/lib/libxively/src/libxively",
 				);
 				INFOPLIST_FILE = "CocoaDisplay/CocoaDisplay-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/libmodbus/3.1.1/lib,
+					"$(PROJECT_DIR)/lib/libxively/obj",
 				);
 				OTHER_CFLAGS = "-DSDLFramework";
 				OTHER_CPLUSPLUSFLAGS = (

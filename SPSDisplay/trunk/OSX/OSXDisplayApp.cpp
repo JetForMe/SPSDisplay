@@ -20,14 +20,24 @@
 //	Project Includes
 //
 
-#include "SDLDisplay.h"
+#include "SPSUtil.h"
 
+#include "SDLDisplay.h"
+#include "SDLFont.h"
+
+#include "PentaMetric.h"
 #include "TristarMPPT.h"
 
 
 
 
 
+OSXDisplayApp::OSXDisplayApp()
+{
+	SDLFont::addFontLocation("/Users/rmann/Library/Fonts/");
+	SDLFont::addFontLocation("/Library/Fonts/");
+	SDLFont::addFontLocation("/System/Library/Fonts/");
+}
 
 SDLDisplay*
 OSXDisplayApp::createDisplay()
@@ -40,7 +50,18 @@ bool
 OSXDisplayApp::initChargeController()
 {
 	mChargeController = new TristarMPPT("/dev/cu.USA19H142P1.1");
-	return mChargeController != NULL;
+	if (mChargeController == NULL)
+	{
+		return false;
+	}
+	
+	mPentaMetric = new PentaMetric("/dev/cu.usbmodem1421");
+	if (mPentaMetric == NULL)
+	{
+		return false;
+	}
+	
+	return true;
 }
 
 
@@ -72,7 +93,7 @@ test()
 	int result = ::SDL_BlitSurface(sdlS, NULL, mSurface, &destRect);
 	if (result != 0)
 	{
-		std::fprintf(stderr, "SDL_BlitSurface returned error: %d\n", result);
+		LZLogDebug("SDL_BlitSurface returned error: %d\n", result);
 		return;
 	}
 	

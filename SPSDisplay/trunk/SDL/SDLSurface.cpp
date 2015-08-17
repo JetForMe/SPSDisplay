@@ -21,6 +21,9 @@
 
 #include <SDL/SDL.h>
 
+#include "SPSUtil.h"
+
+
 
 
 
@@ -57,7 +60,7 @@ SDLSurface::blit(const SDLSurface* inSource, const SDL_Rect& inDestRect)
 	int result = ::SDL_BlitSurface(inSource->mSurface, NULL, mSurface, &destRect);
 	if (result != 0)
 	{
-		std::fprintf(stderr, "Error in SDL_BlitSurface: %d\n", result);
+		LZLogDebug("Error in SDL_BlitSurface: %d\n", result);
 	}
 }
 

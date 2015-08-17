@@ -14,6 +14,7 @@
 //
 
 #include <string>
+#include <vector>
 
 //
 //	Library Imports
@@ -34,9 +35,17 @@ class
 SDLFont
 {
 public:
+	static	void			addFontLocation(const std::string& inPath);
 	static	SDLFont*		fontForName(const std::string& inName, uint8_t inPointSize);
 	
 							~SDLFont();
+	
+	int						height()		const;
+	int						ascent()		const;
+	int						descent()		const;
+	int						lineSkip()		const;
+	
+	int						measureText(const std::string& inText, int16_t& outWidth, int16_t& outHeight)	const;
 	
 	TTF_Font*				font()	const;
 	
@@ -47,6 +56,8 @@ private:
 	std::string				mFontName;
 	uint8_t					mFontSize;
 	TTF_Font*				mFont;
+	
+	static	std::vector<std::string>		sFontLocations;
 };
 
 
